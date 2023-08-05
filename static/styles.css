@@ -1,0 +1,56 @@
+table {
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    color: Wheat;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+td, th {
+    border: 2px solid Wheat;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(3n+2) {
+    color: GreenYellow;
+}
+
+tr:nth-child(3n+3) {
+    color: #FF6347;
+}
+
+.front-title-1 {
+    color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 4em;
+    padding-top: 190px;
+    padding-bottom: 30px
+}
+
+.front-title-2 {
+    color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+.bg-image {
+    background-image: url('pizza_bg.jpg');
+    display: block;
+    background-size: cover;
+    height: 100vh;
+}
+
+.index-menu-link {
+    color: GreenYellow;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 3em;
+}
+.header-link {
+    color: GreenYellow;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+}

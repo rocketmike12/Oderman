@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Ingredients</th>
+        <th>Price (₴)</th>
+    </tr>
+    {% for pizza in menu %}
+        <tr>
+            <td>{{ pizza['name'] }}</td>
+            <td>{{ pizza['ingredients'] }}</td>
+            <td>{{ pizza['price'] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock content %}
