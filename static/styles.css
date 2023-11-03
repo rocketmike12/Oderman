@@ -5,7 +5,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 50%);
+    background-color: rgba(0, 0, 0, 70%);
 }
 
 td, th {
@@ -16,25 +16,26 @@ td, th {
 
 tr:nth-child(3n+2) {
     color: GreenYellow;
+
 }
 
 tr:nth-child(3n+3) {
-    color: #FF6347;
+    color: Tomato;
 }
 
 .front-title-1 {
     color: Wheat;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 4em;
-    padding-top: 190px;
-    padding-bottom: 30px
+    padding-top: 130px;
+    padding-bottom: 10px;
 }
 
 .front-title-2 {
     color: Wheat;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 2.5em;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .bg-image {
@@ -49,8 +50,107 @@ tr:nth-child(3n+3) {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 3em;
 }
+
 .header-link {
     color: GreenYellow;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 1em;
+    margin: 10px;
+}
+.header-link-selected {
+    color: Tomato;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    margin: 10px;
+}
+.feedback-title {
+    color: GreenYellow;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    margin-top: 210px;
+}
+.feedback-input-label {
+    color: GreenYellow;
+    font-family: Verdana, Geneva;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 450px;
+}
+.feedback-name {
+    color: #000000;
+    background-color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.feedback-input {
+    color: #000000;
+    background-color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.feedback-input-submit {
+    color: #000000;
+    background-color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 450px;
+}
+.thank-you-title {
+    color: GreenYellow;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 3em;
+    margin-bottom: 50px;
+    margin-top: 185px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.thank-you-index-link {
+    color: Tomato;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em;
+}
+
+.pay-title {
+    color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 4em;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+.pay-price {
+    color: Wheat;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 5em;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.pay-submit {
+    background-color: GreenYellow;
+    width: 100px;
+    height: 30px;
+    font-size: 1.3em;
+    margin-left: 700px;
+}
+.order-submit {
+    background-color: YellowGreen;
+    width: 1504px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.header {
+    background-color: #303030;
+    padding: 20px;
+    width: 1479px;
+    margin-left: -8px;
+    margin-top: -8px;
 }

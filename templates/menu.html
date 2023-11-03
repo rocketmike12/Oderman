@@ -1,17 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
+<form action="/order">
 <table>
     <tr>
         <th>Name</th>
         <th>Ingredients</th>
         <th>Price (₴)</th>
+        <th>Choose quantity</th>
     </tr>
-    {% for pizza in menu %}
+    {% for menu_item in menu %}
         <tr>
-            <td>{{ pizza['name'] }}</td>
-            <td>{{ pizza['ingredients'] }}</td>
-            <td>{{ pizza['price'] }}</td>
+            <td>{{ menu_item['name'] }}</td>
+            <td>{{ menu_item['ingredients'] }}</td>
+            <td>{{ menu_item['price'] }}</td>
+            <td><input type="number" min="0" value="0" name="{{ menu_item['id'] }}"></td>
         </tr>
     {% endfor %}
 </table>
+    <input type="submit" value="Order" class="order-submit">
+</form>
 {% endblock content %}

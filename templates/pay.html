@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="pay-title" align="center">Checkout</h1>
+<form action="/feedback">
+    <h1 align="center" class="pay-price">{{ price }} ₴</h1>
+    <input type="submit" value="Pay" class="pay-submit">
+</form>
+{% endblock content %}

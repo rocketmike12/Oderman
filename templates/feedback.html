@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="feedback-title" align="center">Please leave us a feedback</h1>
+<form action="/thank_you_feedback">
+<label for="name" class="feedback-input-label">Please choose a dish you ordered</label>
+<select name="name" id="name" class="feedback-name">
+    {% for menu_item in menu %}
+        <option value="{{ menu_item['name'] }}">{{ menu_item['name'] }}</option>
+    {% endfor %}
+</select>
+<br>
+<label for="rating" class="feedback-input-label">Rating</label>
+<input type="number" min="0" max="10" placeholder="/10" name="rating" id="rating" class="feedback-input">
+<br>
+<label for="comment" class="feedback-input-label">Please leave a comment</label>
+<input type="text" name="comment" id="comment" class="feedback-input">
+<br>
+<input type="submit" value="submit" class="feedback-input-submit">
+</form>
+{% endblock content %}

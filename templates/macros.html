@@ -1,6 +1,3 @@
 {% macro nav_link(menu_item) %}
-<a href="{{ url_for(menu_item) }}{{ mode }}" class="header-link">{{ menu_item|upper }}</a>
-  {% if request.endpoint == menu_item %}
-    <span class="header-link">←</span>
-  {% endif %}
+<a href="{{ url_for(menu_item) }}{{ mode }}" class="header-link{% if request.endpoint == menu_item %}-selected{% endif %}">{{ menu_item|upper }}</a>
 {% endmacro %}
